@@ -84,14 +84,13 @@ public class SignUpActivity extends AppCompatActivity {
                         User login = snapshot.child(username).getValue(User.class);
 
                         //if the user is an admin allows them to manipulate restaurant
-                     /*   if(login.getEmail().equals("admin"))
+                        if(login.getEmail().equals("admin"))
                         {
                             if(login.getPassword().equals("admin"))
                                 openAdminActivity();
                         }//Checks if user exists
 
-                        else if*/
-                        if (login.getPassword().equals(password)){
+                        else if (login.getPassword().equals(password)){
                             Home.startup = true;
                             openHomeActivity(username);
                         }
@@ -118,10 +117,10 @@ public class SignUpActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-/*
+
     private void openAdminActivity(){
         Intent intent = new Intent(this, AdminPanel.class);
         startActivity(intent);
     }
-*/
+
 }

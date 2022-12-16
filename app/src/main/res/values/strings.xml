@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">StreetFood</string>
+    <string name="register_resataurant">"Register Restaurant "</string>
+    <string name="add_item_button">Add item</string>
 </resources>
